@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Neon Admin Panel">
+	<meta name="author" content="">
+	
+	<title>Log-Detecotr</title>
+	
+
+	<link rel="stylesheet" href="static/css/jquery-ui-1.10.3.custom.min.css">
+	<link rel="stylesheet" href="static/css/entypo.css">
+	<link rel="stylesheet" href="static/css/css.css">
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="static/css/neon-core.css">
+	<link rel="stylesheet" href="static/css/neon-theme.css">
+	<link rel="stylesheet" href="static/css/neon-forms.css">
+	<link rel="stylesheet" href="static/css/custom.css">
+
+	<script src="static/js/jquery-1.11.0.min.js"></script>
+
+	<!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	
+</head>
+<body class="page-body  page-fade" data-url="http://sc.chinaz.com">
+
+<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->	
+	
+	<div class="sidebar-menu">
+		
+			
+		<header class="logo-env">
+			
+			<!-- logo -->
+			<div class="logo">
+				<a href="">
+					<img src="static/picture/p0.png" width="120" alt="">
+				</a>
+			</div>
+			
+
+			<div class="sidebar-collapse">
+				<a href="#" class="sidebar-collapse-icon with-animation"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+					<i class="entypo-menu"></i>
+				</a>
+			</div>
+
+			<!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+			<div class="sidebar-mobile-menu visible-xs">
+				<a href="#" class="with-animation"><!-- add class "with-animation" to support animation -->
+					<i class="entypo-menu"></i>
+				</a>
+			</div>
+			
+		</header>
+				
+
+		<ul id="main-menu" class="">
+
+			<li id="search">
+				<form method="get" action="">
+					<input type="text" name="q" class="search-input" placeholder=" ">
+					<button type="submit">
+						<i class="entypo-search"></i>
+					</button>
+				</form>
+			</li>
+
+
+					<li class="active">
+						<a href="layout-mixed-menus.html">
+							<span>上传文件</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="skin-black.html">
+							<span>异常检测</span>
+						</a>
+						<ul>
+							<li>
+								<a href="skin-black.html">
+									<span>选择文件</span>
+								</a>
+								<a href="anadata.html">
+									<span>日志分析</span>
+								</a>
+							</li>
+
+                        </ul>
+							<li>
+								<a href="anamulti_zlzr.html">
+									<span>结果分析</span>
+								</a>
+							</li>
+
+					</li>
+
+
+		</ul>
+				
+	</div>	
+	<div class="main-content">
+
+
+<hr>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) 
+{
+	
+
+});
+
+
+function getRandomInt(min, max) 
+{
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+</script>
+
+
+<div class="row">
+	<div class="col-sm-3">
+	
+		<div class="tile-stats tile-red">
+			<div class="icon"><i class="entypo-users"></i></div>
+
+			
+			<h3>行为序列提取</h3>
+
+		</div>
+		
+	</div>
+	
+	<div class="col-sm-3">
+	
+		<div class="tile-stats tile-green">
+			<div class="icon"><i class="entypo-chart-bar"></i></div>
+
+			
+			<h3>行为序列分析</h3>
+
+		</div>
+		
+	</div>
+	
+	<div class="col-sm-3">
+	
+		<div class="tile-stats tile-aqua">
+			<div class="icon"><i class="entypo-mail"></i></div>
+
+			
+			<h3>行为序列预测</h3>
+
+		</div>
+		
+	</div>
+	
+	<div class="col-sm-3">
+	
+		<div class="tile-stats tile-blue">
+			<div class="icon"><i class="entypo-rss"></i></div>
+
+			
+			<h3>异常检测</h3>
+
+
+		</div>
+		
+	</div>
+</div>
+
+<br>
+<style>
+    .image-container {
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        max-width: 1200px;
+    }
+    .dual-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 20px;
+    }
+    .left-image {
+        flex: 1 1 60%;
+        max-width: 60%;
+        max-height: 500px; /* 设置最大高度，可以根据需要调整 */
+        object-fit: contain; /* 确保图片完整显示，不被裁剪 */
+    }
+    .right-image {
+        flex: 1 1 35%;
+        max-width: 35%;
+        height: auto;
+    }
+
+    /* 响应式布局 */
+    @media (max-width: 768px) {
+        .left-image, .right-image {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+        .left-image {
+            max-height: 200px; /* 在小屏幕上可以设置更小的高度 */
+        }
+    }
+</style>
+
+<!-- 添加新的并列图片容器 -->
+<div class="image-container dual-images">
+    <img src="../../static/picture/flow-2.png" alt="分析框架" class="left-image">
+    <img src="../../static/picture/transformer-2.png" alt="模型细节" class="right-image">
+</div>
+
+	<div class="col-sm-8">
+		
+		
+		
+	</div>
+	
+</div>
+
+<br>
+
+<!-- Footer -->
+	</div>
+	
+
+<!-- Sample Modal (Default skin) -->
+<div class="modal fade" id="sample-modal-dialog-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Widget Options - Default Modal</h4>
+			</div>
+			
+			<div class="modal-body">
+				<p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant horrible but confined day end marriage. Eagerness furniture set preserved far recommend. Did even but nor are most gave hope. Secure active living depend son repair day ladies now.</p>
+			</div>
+			
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Sample Modal (Skin inverted) -->
+<div class="modal invert fade" id="sample-modal-dialog-2">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Widget Options - Inverted Skin Modal</h4>
+			</div>
+			
+			<div class="modal-body">
+				<p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant horrible but confined day end marriage. Eagerness furniture set preserved far recommend. Did even but nor are most gave hope. Secure active living depend son repair day ladies now.</p>
+			</div>
+			
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Sample Modal (Skin gray) -->
+<div class="modal gray fade" id="sample-modal-dialog-3">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Widget Options - Gray Skin Modal</h4>
+			</div>
+			
+			<div class="modal-body">
+				<p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant horrible but confined day end marriage. Eagerness furniture set preserved far recommend. Did even but nor are most gave hope. Secure active living depend son repair day ladies now.</p>
+			</div>
+			
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<link rel="stylesheet" href="static/css/jquery-jvectormap-1.2.2.css">
+	<link rel="stylesheet" href="static/css/rickshaw.min.css">
+
+	<!-- Bottom Scripts -->
+	<script src="static/js/main-gsap.js"></script>
+	<script src="static/js/jquery-ui-1.10.3.minimal.min.js"></script>
+	<script src="static/js/bootstrap.js"></script>
+	<script src="static/js/joinable.js"></script>
+	<script src="static/js/resizeable.js"></script>
+	<script src="static/js/neon-api.js"></script>
+	<script src="static/js/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="static/js/jquery-jvectormap-europe-merc-en.js"></script>
+	<script src="static/js/jquery.sparkline.min.js"></script>
+	<script src="static/js/d3.v3.js"></script>
+	<script src="static/js/rickshaw.min.js"></script>
+	<script src="static/js/raphael-min.js"></script>
+	<script src="static/js/morris.min.js"></script>
+	<script src="static/js/toastr.js"></script>
+	<script src="static/js/neon-chat.js"></script>
+	<script src="static/js/neon-custom.js"></script>
+	<script src="static/js/neon-demo.js"></script>
+
+</body>
+</html>
